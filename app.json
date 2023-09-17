@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "BTH1",
+    "slug": "BTH1",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
