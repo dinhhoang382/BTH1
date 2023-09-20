@@ -13,6 +13,7 @@ import Project6 from './Phan1/Project6'
 import Project7 from './Phan1/Project7'
 import Project8 from './Phan1/Project8'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import Calculator from './Phan2/Calculator'
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -22,9 +23,9 @@ const Root = () => {
     <Drawer.Navigator
       screenOptions={{
         headerTintColor: '#fff',
-        headerStyle: { backgroundColor: 'tomato' }
+        headerStyle: { backgroundColor: 'tomato' },
       }}>
-      <Drawer.Screen name='Home' component={HomeScreen} />
+      <Drawer.Screen name='Home' component={HomeScreen} options={{ title: 'BTH1_Đinh Thế Hoàng' }} />
       <Drawer.Screen name='Project1' component={Project1} options={{ title: 'Bài 1' }} />
       <Drawer.Screen name='Project2' component={Project2} options={{ title: 'Bài 2' }} />
       <Drawer.Screen name='Project3' component={Project3} options={{ title: 'Bài 3' }} />
@@ -33,6 +34,7 @@ const Root = () => {
       <Drawer.Screen name='Project6' component={Project6} options={{ title: 'Bài 6' }} />
       <Drawer.Screen name='Project7' component={Project7} options={{ title: 'Bài 7' }} />
       <Drawer.Screen name='Project8' component={Project8} options={{ title: 'Bài 8' }} />
+      <Drawer.Screen name='Calculator' component={Calculator} />
     </Drawer.Navigator>
   )
 }
